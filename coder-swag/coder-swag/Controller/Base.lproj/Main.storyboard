@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -40,7 +41,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="135" id="3JS-qX-3F5">
                                         <rect key="frame" x="0.0" y="28" width="375" height="135"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3JS-qX-3F5" id="Y8n-Dk-5HE" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3JS-qX-3F5" id="Y8n-Dk-5HE">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -66,10 +67,6 @@
                                                 <constraint firstAttribute="trailing" secondItem="Kmi-8Z-Vk7" secondAttribute="trailing" id="rFS-y9-8KL"/>
                                                 <constraint firstItem="mcA-pw-aHJ" firstAttribute="centerX" secondItem="Y8n-Dk-5HE" secondAttribute="centerX" id="vLB-J0-Jbd"/>
                                             </constraints>
-                                            <connections>
-                                                <outlet property="categoryImage" destination="Kmi-8Z-Vk7" id="s96-49-L2S"/>
-                                                <outlet property="categoryLbl" destination="mcA-pw-aHJ" id="rrc-gu-V5k"/>
-                                            </connections>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -86,9 +83,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CODER SWAG" id="DC6-ig-7LS"/>
-                    <connections>
-                        <outlet property="categoryTable" destination="sEA-ck-dlV" id="9Og-YF-pfu"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
